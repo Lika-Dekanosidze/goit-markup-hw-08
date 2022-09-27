@@ -1,0 +1,28 @@
+  .benefits-content {
+    display: flex;
+  }
+  .benefits-content__title {
+    margin-bottom: 10px;
+    padding-top: 30px;
+  
+    color: var(--title-text-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+  .benefits-content__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .benefits-content__text {
+    line-height: 1.71;
+  }
+  .features-box {
+    display: flex;
+    content: '';
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bd-section-team);
+    border-radius: 3px;
+  }

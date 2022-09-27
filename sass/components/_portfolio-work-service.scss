@@ -1,0 +1,99 @@
+.service-section__list {
+    display: flex;
+  }
+  .service-section__item {
+    position: relative;
+     &:not(:last-child) {
+    margin-right: 30px;
+  }
+  }
+  .service-section__name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    max-height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .service-section__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-transform: uppercase;
+    color: var(--accent-bgc-color);
+  }
+  .work-examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .work-examples-list .item {
+    flex-basis: calc((100% - 240px) / 9);
+  }
+  .project {
+    width: 370px;
+  }
+  .project-name {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+  }
+  .project-category {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  .project-idea {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-cl);
+    border-left: 1px solid var(--border-cl);
+    border-right: 1px solid var(--border-cl);
+  } 
+  .link-item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    overflow: hidden;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+     
+    }
+  } 
+  .project-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .link-item:hover &,
+    .link-item:focus & {
+      transform: translateY(0);
+    }
+  }
+  .project-description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+  .project-thumb {
+    position: relative;
+    overflow: hidden;
+  }

@@ -1,0 +1,126 @@
+.modal-text {
+    display: block;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--title-text-color);
+  }
+  .form-modal-input-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form-modal-field {
+    display: block;
+    position: relative;
+  }
+  .form-modal-field-input {
+    width: 100%;
+    height: 40px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      border-color: var(--accent-color);
+      outline: none;
+    }
+    &:focus + .form-modal-input-icon {
+      fill: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }  
+  .form-group-field-desc {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .modal-form-check-field {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+  }
+  .modal-form-own-checkbox {
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 9px;
+  }
+  .modal-form-own-checkbox-icon {
+    display: none;
+    fill: white;
+  }
+  .modal-form-check {
+    position: absolute;
+    appearance: none;
+    &:checked + .modal-form-own-checkbox {
+      background-color: var(--accent-color);
+      border: none;
+    }
+    &:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
+      display: block;
+    }
+    &:focus + .modal-form-own-checkbox {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
+    }
+  }
+  .user-agreement {
+    color: var(--accent-color);
+  }
+  .btn-send-form {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 52px;
+    border: none;
+    color: var(--accent-bgc-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    &:hover,
+    &:focus {
+      background-color: rgba(24, 140, 232, 1);
+    }
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+  .form-modal-field-all {
+    margin: 0;
+    padding: 0%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+  }
+  .form-group-field-massege {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
