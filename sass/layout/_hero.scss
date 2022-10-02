@@ -33,12 +33,11 @@
   .overlay {
     max-width: 1600px;
     height: 400px;
-    //height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bgc-dark-section);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/bg-image/bg-img-mob.jpg);
+      url(../images/bg-image/bg-img-mob.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,24 +46,24 @@
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .overlay {
-      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-image/bg-img-mob@2x.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-img-mob@2x.jpg);
     }
   }
   @media screen and (min-width: 768px) {
     .overlay {
-      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-image/bg-img-tab.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-img-tab.jpg);
     }
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .overlay {
-      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-image/bg-img-tab@2x.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-img-tab@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     .overlay {
-      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-image/bg-img-desk.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-img-desk.jpg);
       height: 600px;
     }
   }
@@ -72,7 +71,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .overlay {
-      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-image/bg-img-desk@2x.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/bg-img-desk@2x.jpg);
       height: 600px;
     }
   }
