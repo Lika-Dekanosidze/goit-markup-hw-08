@@ -18,6 +18,10 @@
     display: block;
     position: relative;
   }
+  .form-group-check {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
   .form-modal-field-input {
     width: 100%;
     height: 40px;
@@ -35,19 +39,17 @@
     display: block;
     margin-bottom: 4px;
   }
-  
-  .modal-form-check-field {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    
+  @media screen and (min-width: 528px) {
+    .modal-form-check-field {
+      display: flex;
+      justify-content: center; 
+    }
   }
   .modal-form-own-checkbox {
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 9px;
+    margin-right: 8px;
   }
   .modal-form-own-checkbox-icon {
     display: none;

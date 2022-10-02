@@ -3,6 +3,9 @@
 }
 .service-section {
     padding-top: 0;
+    @include mq(not-desk) {
+        display: none;
+    }
 }
 .footer-section {
     padding-top: 60px;

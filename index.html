@@ -21,31 +21,74 @@
     <!-- Site header-->
     <header>
       <div class="container main-nav">
-        <nav class="main-nav">
-          <a lang="en" href="./index.html" class="logo"><span class="logo__accent-color">Web</span>Studio </a>
-          <ul class="site-nav list">
-            <li class="site-nav__item"><a href="" class="site-nav__link site-nav_current-color site-nav__nav-link">Студія</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+        <a lang="en" href="./index.html" class="logo"><span class="logo__accent-color">Web</span>Studio </a>
+        <button type="button" class="mobile-btn" data-menu-open>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <div class="header-nav">
+          <nav class="main-nav">
+            <ul class="site-nav list">
+             <li class="site-nav__item"><a href="" class="site-nav__link site-nav_current-color site-nav__nav-link">Студія</a></li>
+             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="con-nav list">
+            <li class="con-nav__item">
+              <a href="mailto:info@devstudio.com" class="con-nav__text-link">
+                <svg class="con-nav__item-svg" width="16px" height="12px">
+                  <use href=".//images/icons.svg/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="con-nav__item">
+              <a href="tel:+380961111111" class="con-nav__text-link">
+                <svg class="con-nav__item-svg" width="10px" height="16px">
+                  <use href="./images/icons.svg/sprite.svg#icon-telefon"></use>
+                </svg>
+                +38 096 111 11 11
+                </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="con-nav list">
-          <li class="con-nav__item">
-            <a href="mailto:info@devstudio.com" class="con-nav__text-link">
-              <svg class="con-nav__item-svg" width="16px" height="12px">
-                <use href=".//images/icons.svg/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="con-nav__item">
-            <a href="tel:+380961111111" class="con-nav__text-link">
-              <svg class="con-nav__item-svg" width="10px" height="16px">
-                <use href="./images/icons.svg/sprite.svg#icon-telefon"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__svg" width="40px" height="40px">
+              <use href=".//images/icons.svg/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav-menu">
+            <ul class="nav-menu list">
+              <li class="nav-menu__item"><a href="" class="site-nav_current-color nav-menu__link">Студія</a></li>
+              <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link">Портфоліо</a></li>
+              <li class="nav-menu__item--indent"><a href="" class="nav-menu__link">Контакти</a></li>
+            </ul>
+          </nav>
+            <ul class="mobile-menu__con-nav-menu list">
+              <li class="con-nav-menu__item">
+                <a href="tel:+380961111111" class="con-nav-menu__text-link con-nav-menu__text-link--accent">
+                   +38 096 111 11 11
+                </a>
+              </li>
+              <li class="con-nav-menu__item">
+                <a href="mailto:info@devstudio.com " class="con-nav-menu__text-link">
+                  info@devstudio.com</a>
+              </li>
+              <li class="con-nav-menu__item">
+                <ul class="mobile-menu__social-link list">
+                  <li class="social-link__item"><a href="" class="mobile-menu__link">Instagram</a></li>
+                  <li class="social-link__item"><a href="" class="mobile-menu__link">Twitter</a></li>
+                  <li class="social-link__item"><a href="" class="mobile-menu__link">Facebook</a></li>
+                  <li class="social-link__item"><a href="" class="mobile-menu__link">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -55,7 +98,7 @@
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
           </div>
-      </section>
+      </section> 
       <!--Benefits-->
       <section class="section benefits-section">
         <div class="container">
@@ -115,19 +158,43 @@
               <div class="service-section__name">
                 <p class="service-section__description">Десктопні додатки</p>
               </div>
-              <img src="./images/box1.jpg" alt="кодування" width="370" />
+              <picture>
+                <source srcset="./images/img1.webp 1x, ./images/img@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/img1.jpg 1x, ./images/img@2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <img src="./images/img1.webp" alt="кодування" />
+              </picture>
             </li>
             <li class="service-section__item">
               <div class="service-section__name">
                 <p class="service-section__description">Мобільні додатки</p>
               </div>
-              <img src="./images/box2.jpg" alt="верстка" width="370" />
+              <picture>
+                <source srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <img src="./images/img2.webp" alt="верстка" />
+              </picture>
             </li>
             <li class="service-section__item">
               <div class="service-section__name">
                 <p class="service-section__description">Дизайнерські рішення</p>
               </div>
-              <img src="./images/box3.jpg" alt="дизайн" width="370" />
+              <picture>
+                <source srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                media="(min-width: 1200px)">
+                <img src="./images/img3.webp" alt="дизайн" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -138,7 +205,29 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list crewman-card">
             <li class="crewman">
-              <img src="./images/img-team.jpg" alt="портрет" width="270" />
+              <picture>
+                <source srcset="./images/team-img/imgdesk.webp 1x, ./images/team-img/imgdesk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/imgdesk.jpg 1x, ./images/team-img/imgdesk@2x.jpg 2x"
+                media="(min-width: 1200px)">
+
+                <source srcset="./images/team-img/imgtab.webp 1x, ./images/team-img/imgtab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/imgtab.jpg 1x, ./images/team-img/imgtab@2x.jpg 2x"
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team-img/imgmob.webp 1x, ./images/team-img/imgmob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/imgmob.jpg 1x, ./images/team-img/imgmob@2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img src="./images/team-img/imgmob.webp" alt="портрет" class="crewman_img" />
+              </picture>
               <div class="our-product">
                 <h3 class="section-text">Ігор Дем'яненко</h3>
                 <p class="profession">Product Designer</p>
@@ -174,7 +263,29 @@
               </div>
             </li>
             <li class="crewman">
-              <img src="./images/img-team2.jpg" alt="портрет" width="270" />
+              <picture>
+                <source srcset="./images/team-img/img2desk.webp 1x, ./images/team-img/img2desk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img2desk.jpg 1x, ./images/team-img/img2desk@2x.jpg 2x"
+                media="(min-width: 1200px)">
+
+                <source srcset="./images/team-img/img2tab.webp 1x, ./images/team-img/img2tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img2tab.jpg 1x, ./images/team-img/img2tab@2x.jpg 2x"
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team-img/img2mob.webp 1x, ./images/team-img/img2mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img2mob.jpg 1x, ./images/team-img/img2mob@2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img src="./images/team-img/img2mob.webp" alt="портрет" class="crewman_img" />
+              </picture>
               <div class="our-product">
                 <h3 class="section-text">Ольга Рєпіна</h3>
                 <p class="profession">Frontend Developer</p>
@@ -210,7 +321,29 @@
               </div>
             </li>
             <li class="crewman">
-              <img src="./images/img-team3.jpg" alt="портрет" width="270" />
+              <picture>
+                <source srcset="./images/team-img/img3desk.webp 1x, ./images/team-img/img3desk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img3desk.jpg 1x, ./images/team-img/img3desk@2x.jpg 2x"
+                media="(min-width: 1200px)">
+
+                <source srcset="./images/team-img/img3tab.webp 1x, ./images/team-img/img3tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img3tab.jpg 1x, ./images/team-img/img3tab@2x.jpg 2x"
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team-img/img3mob.webp 1x, ./images/team-img/img3mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img3mob.jpg 1x, ./images/team-img/img3mob@2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img src="./images/team-img/img3mob.webp" alt="портрет" class="crewman_img" />
+              </picture>
               <div class="our-product">
                 <h3 class="section-text">Микола Тарасов</h3>
                 <p class="profession">Marketing</p>
@@ -246,7 +379,29 @@
               </div>
             </li>
             <li class="crewman">
-              <img src="./images/img-team4.jpg" alt="портрет" width="270" />
+              <picture>
+                <source srcset="./images/team-img/img4desk.webp 1x, ./images/team-img/img4desk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img4desk.jpg 1x, ./images/team-img/img4desk@2x.jpg 2x"
+                media="(min-width: 1200px)">
+
+                <source srcset="./images/team-img/img4tab.webp 1x, ./images/team-img/img4tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img4tab.jpg 1x, ./images/team-img/img4tab@2x.jpg 2x"
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team-img/img4mob.webp 1x, ./images/team-img/img4mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp">
+
+                <source srcset="./images/team-img/img4mob.jpg 1x, ./images/team-img/img4mob@2x.jpg 2x"
+                media="(max-width: 767px)">
+                <img src="./images/team-img/img4mob.webp" alt="портрет" class="crewman_img" />
+              </picture>
               <div class="our-product">
                 <h3 class="section-text">Михайло Єрмаков</h3>
                 <p class="profession">UI Designer</p>
@@ -285,7 +440,7 @@
         </div>
       </section>
       <!--regular clients-->
-      <section class="section">
+     <section class="section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-company list">
@@ -380,13 +535,15 @@
               <label class="form-group-field-desc" for="feadback">Коментар</label>
               <textarea class="form-group-field-massege form-modal-field-all" name="feadback" id="feadback" placeholder="Введіть текст"></textarea>
             </div>
-              <label class="modal-form-check-field">
-                <input class="modal-form-check" type="checkbox" name="policy" required>
-                <svg class="modal-form-own-checkbox" width="16px" height="15px">
-                  <use class="modal-form-own-checkbox-icon" href="./images/icons.svg/sprite.svg#icon-check"></use>
-                </svg>
-                Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-agreement" href="#">Умови договору</a>
-              </label>
+              <div class="form-group-check">
+                <label class="modal-form-check-field">
+                  <input class="modal-form-check" type="checkbox" name="policy" required>
+                  <svg class="modal-form-own-checkbox" width="16px" height="15px">
+                    <use class="modal-form-own-checkbox-icon" href="./images/icons.svg/sprite.svg#icon-check"></use>
+                  </svg>
+                  Погоджуюся з розсилкою та приймаю&nbsp;<a class="user-agreement" href="#">Умови договору</a>
+                </label>
+              </div>
             <button class="btn-send-form" type="submit">Відправити</button>
           </form>
           </div>
@@ -464,6 +621,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,15 +1,32 @@
   .crewman {
-    width: 270px;
     background-color: var(--accent-bgc-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+  }
+  .crewman_img {
+    width: 100%;
   }
   .crewman-card {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+
+    @include mq(tab-only) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+     }
+
+     @include mq(desk) {
+      display: flex;
+      flex-direction: inherit;
+      flex-wrap: nowrap;
+      gap: 30px;
+     }
   }
   .section-text {
     margin-bottom: 10px;
